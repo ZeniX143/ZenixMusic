@@ -1,3 +1,5 @@
+#Updated By MrPerfectXd
+
 from os import getenv
 from dotenv import load_dotenv
 
@@ -14,7 +16,7 @@ class Config:
         self.LOGGER_ID = int(getenv("LOGGER_ID", 0))
         self.OWNER_ID = int(getenv("OWNER_ID", 0))
 
-        self.DURATION_LIMIT = int(getenv("DURATION_LIMIT", 500)) * 500
+        self.DURATION_LIMIT = int(getenv("DURATION_LIMIT", 500)) 
         self.QUEUE_LIMIT = int(getenv("QUEUE_LIMIT", 30))
         self.PLAYLIST_LIMIT = int(getenv("PLAYLIST_LIMIT", 30))
 
@@ -25,11 +27,11 @@ class Config:
         self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TitanNetwrk")
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Musical_Beatsz")
 
-        self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", "False").lower() == "true"
-        self.AUTO_END: bool = getenv("AUTO_END", "False").lower() == "true"
+        self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", False)
+        self.AUTO_END: bool = getenv("AUTO_END", False)
     
-        self.THUMB_GEN: bool = getenv("THUMB_GEN", "True").lower() == "true"
-        self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", "True").lower() == "true"
+        self.THUMB_GEN: bool = getenv("THUMB_GEN", True)
+        self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", True)
 
         self.LANG_CODE = getenv("LANG_CODE", "en")
 
