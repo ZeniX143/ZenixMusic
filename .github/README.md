@@ -11,7 +11,7 @@
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
-<img src="https://readme-typing-svg.herokuapp.com?color=00FF00&width=420&lines=Wellcome+To+Tom+X+Jerry+Music+Voice+Chat+;Managed+by+Mr+Perfect+Xd%E2%9D%A4%EF%B8%8F"> 
+<img src="https://readme-typing-svg.herokuapp.com?color=00FF00&width=420&lines=Wellcome+To+Tom+X+Jerry+Music+Bot+;Managed+by+Mr+Perfect+Xd%E2%9D%A4%EF%B8%8F"> 
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
