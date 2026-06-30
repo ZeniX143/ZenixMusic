@@ -24,17 +24,17 @@ class Inline:
             )
         elif timer:
             keyboard.append(
-                [self.ikb(text=timer, callback_data=f"controls status {chat_id}", style=ButtonStyle.PRIMARY)]
+                [self.ikb(text=timer, callback_data=f"controls status {chat_id}")]
             )
 
         if not remove:
             keyboard.append(
                 [
-                    self.ikb(text="▷", callback_data=f"controls resume {chat_id}", style=ButtonStyle.SUCCESS),
-                    self.ikb(text="II", callback_data=f"controls pause {chat_id}", style=ButtonStyle.SUCCESS),
-                    self.ikb(text="⥁", callback_data=f"controls replay {chat_id}", style=ButtonStyle.PRIMARY),
-                    self.ikb(text="‣‣I", callback_data=f"controls skip {chat_id}", style=ButtonStyle.DANGER),
-                    self.ikb(text="▢", callback_data=f"controls stop {chat_id}", style=ButtonStyle.DANGER),
+                    self.ikb(text="▷", callback_data=f"controls resume {chat_id}"),
+                    self.ikb(text="II", callback_data=f"controls pause {chat_id}"),
+                    self.ikb(text="⥁", callback_data=f"controls replay {chat_id}"),
+                    self.ikb(text="‣‣I", callback_data=f"controls skip {chat_id}"),
+                    self.ikb(text="▢", callback_data=f"controls stop {chat_id}"),
                 ]
             )
             if not _lang:
@@ -43,9 +43,7 @@ class Inline:
                 [
                     self.ikb(
                         text=_lang.get("add_me", "✙ 𝐀ᴅᴅ 𝐌є 𝐈η 𝐘συʀ 𝐆ʀσυᴘ ✙"),
-                        url=f"https://t.me/{app.username}?startgroup=true",
-                        style=ButtonStyle.PRIMARY,
-                    ),
+                        url=f"https://t.me/{app.username}?startgroup=true"),
                 ]
             )
             keyboard.append(
@@ -53,13 +51,10 @@ class Inline:
                     self.ikb(
                         text=_lang.get("channel", "˹ 𝐔ᴘᴅᴧᴛєs ˼"),
                         url=config.SUPPORT_CHANNEL,
-                        style=ButtonStyle.SUCCESS,
                     ),
                     self.ikb(
                         text=_lang.get("close", "⌯ 𝐂ʟσsє ⌯"),
-                        callback_data="help close",
-                        style=ButtonStyle.DANGER,
-                    ),
+                        callback_data="help close"),
                 ]
             )
         return self.ikm(keyboard)
@@ -69,8 +64,8 @@ class Inline:
         if back:
             rows = [
                 [
-                    self.ikb(text=_lang["back"], callback_data="help back", style=ButtonStyle.PRIMARY),
-                    self.ikb(text=_lang["close"], callback_data="help close", style=ButtonStyle.DANGER),
+                    self.ikb(text=_lang["back"], callback_data="help back"),
+                    self.ikb(text=_lang["close"], callback_data="help close"),
                 ]
             ]
         else:
@@ -82,8 +77,8 @@ class Inline:
             rows = [buttons[i : i + 3] for i in range(0, len(buttons), 3)]
             rows.append(
                 [
-                    self.ikb(text=_lang["back"], callback_data="help_back_start", style=ButtonStyle.PRIMARY),
-                    self.ikb(text=_lang["close"], callback_data="help close", style=ButtonStyle.DANGER),
+                    self.ikb(text=_lang["back"], callback_data="help_back_start"),
+                    self.ikb(text=_lang["close"], callback_data="help close"),
                 ]
             )
 
@@ -112,7 +107,6 @@ class Inline:
                     self.ikb(
                         text=_text,
                         callback_data=f"controls force {chat_id} {item_id}",
-                        style=ButtonStyle.SUCCESS,
                     )
                 ]
             ]
@@ -126,7 +120,6 @@ class Inline:
                     self.ikb(
                         text=_text,
                         callback_data=f"controls {_action} {chat_id} q",
-                        style=ButtonStyle.SUCCESS,
                     )
                 ]
             ]
@@ -164,13 +157,13 @@ class Inline:
             [
                 self.ikb(
                     text=lang["add_me"],
-                    url=f"https://t.me/{app.username}?startgroup=true", style=ButtonStyle.PRIMARY
+                    url=f"https://t.me/{app.username}?startgroup=true",
                 )
             ],
-            [self.ikb(text=lang["help"], callback_data="help", style=ButtonStyle.PRIMARY)],
+            [self.ikb(text=lang["help"], callback_data="help")],
             [
-                self.ikb(text=lang["support"], url=config.SUPPORT_CHAT, style=ButtonStyle.SUCCESS),
-                self.ikb(text=lang["channel"], url=config.SUPPORT_CHANNEL, style=ButtonStyle.SUCCESS),
+                self.ikb(text=lang["support"], url=config.SUPPORT_CHAT,),
+                self.ikb(text=lang["channel"], url=config.SUPPORT_CHANNEL,),
             ],
         ]
         if private:
