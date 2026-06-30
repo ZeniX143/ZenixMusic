@@ -1,6 +1,6 @@
-# Copyright (c) 2025 AnonymousX1025
+
 # Licensed under the MIT License.
-# This file is part of AnonXMusic
+# This file is part of MrPerfectXd
 
 
 from pyrogram import types
@@ -42,6 +42,31 @@ class Inline:
                     self.ikb(text="⥁", callback_data=f"controls replay {chat_id}"),
                     self.ikb(text="‣‣I", callback_data=f"controls skip {chat_id}"),
                     self.ikb(text="▢", callback_data=f"controls stop {chat_id}"),
+                ]
+            )
+            if not _lang:
+                _lang = lang.languages["en"]
+            keyboard.append(
+                [
+                    self.ikb(
+                        text=_lang.get("add_me", "✙ 𝐀ᴅᴅ 𝐌є 𝐈η 𝐘συʀ 𝐆ʀσυᴘ ✙"),
+                        url=f"https://t.me/{app.username}?startgroup=true",
+                        style=ButtonStyle.PRIMARY,
+                    ),
+                ]
+            )
+            keyboard.append(
+                [
+                    self.ikb(
+                        text=_lang.get("channel", "˹ 𝐔ᴘᴅᴧᴛєs ˼"),
+                        url=config.SUPPORT_CHANNEL,
+                        style=ButtonStyle.SUCCESS,
+                    ),
+                    self.ikb(
+                        text=_lang.get("close", "⌯ 𝐂ʟσsє ⌯"),
+                        callback_data="help close",
+                        style=ButtonStyle.DANGER,
+                    ),
                 ]
             )
         return self.ikm(keyboard)
@@ -152,8 +177,8 @@ class Inline:
             rows += [
                 [
                     self.ikb(
-                        text=lang["source"],
-                        url="https://github.com/AnonymousX1025/AnonXMusic",
+                        text=lang["˹ ᴏᴡɴᴇʀ ˼"],
+                        url="https://t.me/MrPerfectXd",
                     )
                 ]
             ]
