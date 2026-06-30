@@ -1,7 +1,7 @@
 {
-    "name": "AnonX Music",
+    "name": "🎵˹● 𝑻𝑶𝑴 ✘ 𝑱𝑬𝑹𝑹𝒀 𝑴𝑼𝑺𝑰𝑪 ●˼™🎵",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg",
+    "logo": "https://telegra.ph/file/c316aa782ab03f45ba9c2.jpg",
     "keywords": ["python3", "telegram", "bot", "music-bot"],
     "stack": "container",
     "env": {
@@ -36,7 +36,7 @@
             "required": true
         },
         "SESSION": {
-            "description": "A Pyrogram v2 String Session from @StringFatherBot on Telegram.",
+            "description": "A Pyrogram v2 String Session from @MrPerfectXd on Telegram.",
             "value": "",
             "required": true
         }
