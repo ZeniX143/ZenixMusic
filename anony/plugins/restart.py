@@ -6,11 +6,7 @@ import os
 import sys
 import shutil
 import asyncio
-from datetime import datetime
 
-import urllib3
-from git.exc import GitCommandError, InvalidGitRepositoryError
-from pyrogram import filters
 
 from pyrogram import filters, types
 
